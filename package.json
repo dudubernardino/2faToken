@@ -1,0 +1,25 @@
+{
+  "name": "2fatoken",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate 2fa token in the terminal.",
+  "main": "bin/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Bernardino",
+  "license": "ISC",
+  "keywords": [
+    "cli",
+    "2fa",
+    "token"
+  ],
+  "bin": {
+    "mycli": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "5.3.0",
+    "figlet": "1.6.0",
+    "yargs": "^17.7.2"
+  }
+}
