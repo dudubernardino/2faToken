@@ -11,8 +11,6 @@ console.log(
   chalk.yellow(figlet.textSync("2FA Token", { horizontalLayout: "full" }))
 );
 
-yargs.positional;
-
 yargs(hideBin(process.argv))
   .command(
     "$0",

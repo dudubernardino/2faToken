@@ -1,6 +1,6 @@
 {
   "name": "2fatoken",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A CLI tool to generate 2fa token in the terminal.",
   "main": "bin/index.js",
   "type": "module",
