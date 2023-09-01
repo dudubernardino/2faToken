@@ -41,7 +41,7 @@ yargs(hideBin(process.argv))
         `Generating 2FA token with secret: ${chalk.green(secret)} \n`
       );
 
-      const token = await get2fa("DYCROSK6AN7XYUIX");
+      const token = await get2fa(secret);
 
       console.log(`Token: ${chalk.green(token)}`);
     }

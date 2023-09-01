@@ -755,11 +755,9 @@ export const get2fa = (secret) => {
   const isInTime = validityPeriod >= 15 && validityPeriod <= 30;
 
   if (!isInTime) {
-    console.log(
-      chalk.blue(`Counter value is ${validityPeriod} seconds, waiting...\n`)
-    );
+    console.log(chalk.blue(`Waiting ${validityPeriod} seconds...\n`));
     return new Promise((resolve) => {
-      const waitTime = validityPeriod * 1000 + 2000;
+      const waitTime = validityPeriod * 1000;
       setTimeout(() => resolve(get2fa(secret)), waitTime);
     });
   }
